@@ -8,3 +8,12 @@
 # Huevos   | 2,30
 # Cebolla  | 0,85
 # Aceite   | 4,35
+productos = {"Pan": 1.40, "Huevos": 2.30, "Cebolla": 0.85, "Aceite": 4.35}
+producto = input("Ingrese el nombre del producto que desea: ")
+cantidad = input("Ingrese la cantidad que desea comprar: ")
+if producto in productos:
+    precio_unitario = productos[producto]
+    precio_total = precio_unitario * int(cantidad)
+    print(f"El precio de {cantidad} unidad(es) de {producto} es {precio_total:.2f}")
+else:
+    print("El producto ingresado no está disponible")
