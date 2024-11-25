@@ -17,3 +17,21 @@
 # (5) Mostrar la lista del alumnado aprobado de la base de datos con su NIF
 # y nombre.
 # (6) Terminar el programa.
+base_datos = {}
+def mostrar_menu():
+    print("\nMenú:")
+    print("1. Añadir alumno/a")
+    print("2. Eliminar alumno/a")
+    print("3. Mostrar alumno/a")
+    print("4. Listar todo el alumnado")
+    print("5. Listar alumnado aprobado")
+    print("6. Terminar")
+def anadir_alumno():
+    nif = input("Introduce el NIF del alumno/a: ")
+    if nif in base_datos:
+        print("El NIF ya existe, intenta con otro")
+        return
+    nombre = input("Introduce el nombre: ")
+    apellidos = input("Introduce los apellidos: ")
+    telefono = input("Introduce el teléfono: ")
+    correo = input("Introduce el correo electrónico: ")

@@ -9,7 +9,7 @@
 # Cebolla  | 0,85
 # Aceite   | 4,35
 productos = {"Pan": 1.40, "Huevos": 2.30, "Cebolla": 0.85, "Aceite": 4.35}
-producto = input("Ingrese el nombre del producto que desea: ")
+producto = input("Ingrese el nombre del producto que desea: ").capitalize()
 cantidad = input("Ingrese la cantidad que desea comprar: ")
 if producto in productos:
     precio_unitario = productos[producto]
